@@ -4,7 +4,7 @@ pragma solidity ^0.8.17;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-contract Source is AccessControl, ERC20 {
+contract Source is AccessControl {
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
     bytes32 public constant WARDEN_ROLE = keccak256("BRIDGE_WARDEN_ROLE");
     mapping(address => bool) public registeredTokens;
